@@ -1,0 +1,30 @@
+<article
+    data-test-blog-container
+    class='BlogViewContainer FlexContainer'
+>
+    <div class='BlogContent'>
+        <h3
+            data-test-blog-title
+            class='BlogTitle'
+        >
+            {{@model.title}}
+        </h3>
+        <p data-test-blog-author>
+            By <span class='BoldedText'>{{@model.author}}</span>
+        </p>
+        <p data-test-blog-updated>
+            Updated <span class='BoldedText'>{{moment-from @model.updated}}</span>
+        </p>
+        <img
+            data-test-blog-image
+            src={{@model.imageLg}}
+            alt={{@model.imageAlt}}
+        />
+        <p
+            data-test-blog-description
+            class='BlogDescription'
+        >
+            {{@model.description}}
+        </p>
+    </div>
+</article>

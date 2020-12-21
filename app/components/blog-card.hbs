@@ -1,0 +1,28 @@
+<article
+    data-test-blog-card-container
+    class='BlogCardContainer'
+>
+    <LinkTo @route='view' @model={{@blog}}>
+        <img
+            data-test-blog-image
+            class='ImageSmall'
+            src={{@blog.imageSm}}
+            alt={{@blog.imageAlt}}
+        />
+    </LinkTo>
+    <h3 data-test-blog-title class='BlogTitle'>
+        <LinkTo
+            data-test-blog-link
+            @route='view'
+            @model={{@blog}}
+        >
+            {{@blog.title}}
+        </LinkTo>
+    </h3>
+    <p data-test-blog-description class='BlogDescription'>
+        {{this.truncatedString}}
+    </p>
+    <p data-test-blog-updated class='BlogTimeUpdated'>
+        {{moment-from @blog.updated}}
+    </p>
+</article>

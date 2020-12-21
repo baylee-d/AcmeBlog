@@ -1,0 +1,22 @@
+<section
+    data-test-social-icon-bar
+    class='SocialIconBar'
+>
+    <ul>
+        <li data-test-social-link>
+            <LinkTo @route='index' aria-label='Go to Facebook'>
+                {{fa-icon 'facebook' aria-hidden='true'}}
+            </LinkTo>
+        </li>
+        <li data-test-social-link>
+            <LinkTo @route='index' aria-label='Go to Twitter'>
+                {{fa-icon 'twitter' aria-hidden='true'}}
+            </LinkTo>
+        </li>
+        <li data-test-social-link>
+            <LinkTo @route='index' aria-label='Get email notifications'>
+                {{fa-icon 'envelope' aria-hidden='true'}}
+            </LinkTo>
+        </li>
+    </ul>
+</section>

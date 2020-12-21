@@ -1,0 +1,8 @@
+<section
+    data-test-blog-list-container
+    class='BlogListContainer FlexContainer'
+>
+    {{#each @model as |blog|}}
+        <BlogCard @blog={{blog}} />
+    {{/each}}
+</section>
